@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menú</title>
+    <!-- Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+    rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/menu.css') }}"/>
+
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+    </div>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-contact' ></i>
+            <span class="link_name">Asistencias</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Asistencias</a></li>
+          <li><a href="#">Reportes de asistencias</a></li>
+          <li><a href="#">Lista de reportes</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-content' ></i>
+            <span class="link_name">Reportes</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Reportes</a></li>
+          <li><a href="#">Registros</a></li>
+          <li><a href="#">Lista de registros</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Configuración</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Configuración</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-exit' ></i>
+          <span class="link_name">Salir</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="/fronted/salir">Salir</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="{{url_for('static', filename='assets/img/a yo.jpg')}}" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Administrador</div>
+        <div class="job">David Sierra</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor id sint velit magnam voluptatem repellat rerum sequi molestiae, voluptatum ut illum quo dolore! Fuga eum dolorem ducimus voluptates vero esse.</p>
+    </div>
+  </section>
+  <script src="{{url_for('static', filename='JS/menu.js')}}"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
