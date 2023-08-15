@@ -7,6 +7,6 @@ routes_home = Blueprint("routes_home", __name__)
 def exit():
     return render_template('inicio.html')
 
-@routes_home.route("/menu" ,  methods=['GET'] )
-def menu():
-    return render_template('/main/menu.html')
+@routes_home.route("/registro" ,  methods=['GET'] )
+def registro():
+    return render_template('/main/registro.html')
