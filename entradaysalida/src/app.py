@@ -11,8 +11,8 @@ app.register_blueprint(routes_home, url_prefix="/fronted")
 
 @app.route("/")
 def ini():
-    titulo="pagina principal"
-    return render_template('inicio.html', title=titulo)
+    titulo="Pagina principal"
+    return render_template('login.html', title=titulo)
 
 
 if __name__ == '__main__':

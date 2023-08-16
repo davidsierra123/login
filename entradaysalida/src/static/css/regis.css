@@ -28,7 +28,7 @@ section {
 .container {
   position: relative;
   width: 325px;
-  height: 560px;
+  height: 570px;
   background: white;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -75,9 +75,8 @@ section {
   left: 50%; /* Centramos horizontalmente en el 50% del contenedor */
   transform: translateX(-50%); /* Movemos el 50% hacia la izquierda para centrar */
   top: 5%;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
-  /* background: black; */
 }
 
 .btn1 {
@@ -89,7 +88,7 @@ section {
   border-radius: 15px;
   position: absolute;
   right: 27%;
-  top: 92%;
+  top: 90%;
   font-size: 18.5px;
   cursor: pointer;
 }

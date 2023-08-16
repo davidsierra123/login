@@ -10,3 +10,8 @@ def exit():
 @routes_home.route("/registro" ,  methods=['GET'] )
 def registro():
     return render_template('/main/registro.html')
+
+
+@routes_home.route("/login" ,  methods=['GET'] )
+def login():
+    return render_template('/main/login.html')
